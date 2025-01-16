@@ -30,9 +30,7 @@ This repository contains minimal code and resources for inference using the **Ko
   </tr> -->
 </table>
 
-| Audio 1                                                                                       | Audio 2                                                                                       | Audio 3                                                                                       |
-|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| <audio controls> <source src="assets/edu_note.wav" type="audio/mpeg"> Your browser does not support the audio element. </audio> | <audio controls> <source src="assets/fun_fact.wav" type="audio/mpeg"> Your browser does not support the audio element. </audio> | <audio controls> <source src="assets/thanks.wav" type="audio/mpeg"> Your browser does not support the audio element. </audio> |
+<video controls autoplay loop src="https://github.com/user-attachments/assets/0416b6a3-152c-4d34-9c76-30f065eb170b" width="30%"></video>
 
 ## Features
 
