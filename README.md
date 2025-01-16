@@ -1,5 +1,9 @@
 # Kokoro-82M ONNX Runtime Inference
 
+![Downloads](https://img.shields.io/github/downloads/yakhyo/kokoro-82m-onnx/total)
+[![GitHub Repo stars](https://img.shields.io/github/stars/yakhyo/gaze-estimation)](https://github.com/yakhyo/kokoro-82m-onnx/stargazers)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/yakhyo/kokoro-82m-onnx)
+
 This repository contains minimal code and resources for inference using the **Kokoro-82M** model. The repository supports inference using **ONNX Runtime**.
 
 <table>
