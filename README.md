@@ -81,6 +81,16 @@ Specify input text and model weights in `inference.py` then run:
 python inference.py
 ```
 
+### Gradio App
+
+Run below start Gradio App
+```bash
+python app.py
+```
+<div>
+  <img src="gradio_demo.png", width="100%>
+</div>
+
 ---
 
 ## License
