@@ -1,3 +1,4 @@
+gradio
 torch
 phonemizer
 soundfile
