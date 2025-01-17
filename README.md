@@ -50,6 +50,19 @@ This repository contains minimal code and resources for inference using the **Ko
    apt-get install espeak -y
    ```
 
+## Docker
+
+```bash
+docker build -t kokoro-docker . && docker run --rm -p 7860:7860 kokoro-docker
+```
+
+What this does:
+1. Builds the Docker image and tags it as `kokoro-docker`.
+2. Runs the container and maps port `7860` (container) to port `7860` (host).
+3. Automatically removes the container when it stops (`--rm`).
+
+Access your app at http://localhost:7860 once it's running.
+
 ---
 
 ## Usage
