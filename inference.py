@@ -4,7 +4,7 @@ from models import Tokenizer, Kokoro
 
 
 def main():
-    model_path = "weights/kokoro-v0_19.onnx"
+    model_path = "weights/kokoro-quant.onnx"  # "weights/kokoro-v0_19.onnx"
     style_vector_path = "voices/af.pt"
     output_filename = "test_out.wav"
     tokenizer = Tokenizer()

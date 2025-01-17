@@ -1,6 +1,6 @@
 # Kokoro-82M ONNX Runtime Inference
-[![Hugging Face Space](https://img.shields.io/badge/🤗%20HuggingFace-Space-blue)](https://huggingface.co/spaces/yakhyo/kokoro-82m)
 
+[![Hugging Face Space](https://img.shields.io/badge/🤗%20HuggingFace-Space-blue)](https://huggingface.co/spaces/yakhyo/kokoro-82m)
 
 ![Downloads](https://img.shields.io/github/downloads/yakhyo/kokoro-82m-onnx/total)
 [![GitHub Repo stars](https://img.shields.io/github/stars/yakhyo/kokoro-82m-onnx)](https://github.com/yakhyo/kokoro-82m-onnx/stargazers)
@@ -57,6 +57,7 @@ docker build -t kokoro-docker . && docker run --rm -p 7860:7860 kokoro-docker
 ```
 
 What this does:
+
 1. Builds the Docker image and tags it as `kokoro-docker`.
 2. Runs the container and maps port `7860` (container) to port `7860` (host).
 3. Automatically removes the container when it stops (`--rm`).
@@ -69,7 +70,15 @@ Access your app at http://localhost:7860 once it's running.
 
 ### Download ONNX Model
 
-[click to download](https://github.com/yakhyo/kokoro-82m/releases/download/v0.0.1/kokoro-v0_19.onnx)
+[kokoro-quant.onnx](https://github.com/yakhyo/kokoro-82m/releases/download/v0.0.1/kokoro-quant.onnx)
+[kokoro-v0_19.onnx](https://github.com/yakhyo/kokoro-82m/releases/download/v0.0.1/kokoro-v0_19.onnx)
+
+| **Filename**        | **Description**                      | **Size** |
+| ------------------- | ------------------------------------ | -------- |
+| `kokoro-quant.onnx` | Mixed precision model (**faster**)\* | 169MB    |
+| `kokoro-v0_19.onnx` | Original model                       | 330MB    |
+
+\*- Mixed precision model converted by https://github.com/taylorchu
 
 ### Jupyter Notebook Inference Example
 
@@ -88,9 +97,11 @@ python inference.py
 ### Gradio App
 
 Run below start Gradio App
+
 ```bash
 python app.py
 ```
+
 <div>
   <img src="gradio_demo.png", width="100%>
 </div>

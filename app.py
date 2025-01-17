@@ -8,6 +8,9 @@ from models import Tokenizer, Kokoro
 def get_style_vector_choices(directory="voices"):
     return [file for file in os.listdir(directory) if file.endswith(".pt")]
 
+def get_onnx_models(directory="weights"):
+    return [file for file in os.listdir(directory) if file.endswith(".onnx")]
+
 # Function to perform TTS using your local model
 def local_tts(
         text: str,
@@ -20,6 +23,8 @@ def local_tts(
         try:
             tokenizer = Tokenizer()
             style_vector_path = os.path.join("voices", style_vector)
+            model_path = os.path.join("weights", model_path)
+            
             inference = Kokoro(model_path, style_vector_path, tokenizer=tokenizer, lang='en-us')
 
             audio, sample_rate = inference.generate_audio(text, speed=speed)
@@ -37,6 +42,7 @@ def local_tts(
 
 # Get the list of available style vectors
 style_vector_choices = get_style_vector_choices()
+onnx_models_choices = get_onnx_models()
 
 # sample texts and their corresponding audio 
 sample_outputs = [
@@ -57,7 +63,7 @@ with gr.Blocks() as demo:
     
     # Model-specific inputs
     with gr.Row(variant="panel"):
-        model_path = gr.Textbox(label="Model Path", value="weights/kokoro-v0_19.onnx", interactive=False)
+        model_path = gr.Dropdown(choices=onnx_models_choices, label="ONNX Model Path", value=onnx_models_choices[0])
         style_vector = gr.Dropdown(choices=style_vector_choices, label="Style Vector", value=style_vector_choices[0])
         output_file_format = gr.Dropdown(choices=["wav", "mp3"], label="Output Format", value="wav")
         speed = gr.Slider(minimum=0.5, maximum=2.0, value=1.0, step=0.1, label="Speed")
