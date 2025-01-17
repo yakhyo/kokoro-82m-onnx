@@ -102,11 +102,10 @@ python app.py
 ```
 
 <div align="center">
-  <img src="assets/gradio.png", width="100%">
+  <img src="assets/gradio.png" width="100%">
 </div>
 
 
----
 
 ## License
 
@@ -114,7 +113,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 Model weights licensed under the [Apache 2.0](#license)
 
----
 
 ## Acknowledgments
 
