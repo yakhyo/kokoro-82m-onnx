@@ -101,8 +101,8 @@ Run below start Gradio App
 python app.py
 ```
 
-<div>
-  <img src="assets/gradio.png", width="100%>
+<div align="center">
+  <img src="assets/gradio.png", width="100%">
 </div>
 
 
@@ -111,6 +111,7 @@ python app.py
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
 Model weights licensed under the [Apache 2.0](#license)
 
 ---
