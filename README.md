@@ -1,4 +1,6 @@
 # Kokoro-82M ONNX Runtime Inference
+[![Hugging Face Space](https://img.shields.io/badge/🤗%20HuggingFace-Space-blue)](https://huggingface.co/spaces/yakhyo/kokoro-82m)
+
 
 ![Downloads](https://img.shields.io/github/downloads/yakhyo/kokoro-82m-onnx/total)
 [![GitHub Repo stars](https://img.shields.io/github/stars/yakhyo/kokoro-82m-onnx)](https://github.com/yakhyo/kokoro-82m-onnx/stargazers)

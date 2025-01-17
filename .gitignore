@@ -1,4 +1,4 @@
-.onnx
+weights/*.onnx
 .wav
 
 # Byte-compiled / optimized / DLL files
