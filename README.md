@@ -101,9 +101,10 @@ Run below start Gradio App
 python app.py
 ```
 
-<div align="center">
-  <img src="gradio.png", width="100%>
+<div>
+  <img src="assets/gradio.png", width="100%>
 </div>
+
 
 ---
 
