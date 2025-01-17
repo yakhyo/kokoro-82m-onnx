@@ -26,6 +26,7 @@ This repository contains minimal code and resources for inference using the **Ko
 ## Features
 
 - **ONNX Runtime Inference**: Kokoro-82M (v0_19) Minimal ONNX Runtime Inference code. It supports `en-us` and `en-gb`.
+- **Optimized ONNX Inference**: Mixed precision applied ONNX weights, faster inference and twice smaller in terms of size.
 
 ---
 
@@ -100,8 +101,8 @@ Run below start Gradio App
 python app.py
 ```
 
-<div>
-  <img src="gradio_demo.png", width="100%>
+<div align="center">
+  <img src="gradio.png", width="100%>
 </div>
 
 ---

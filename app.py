@@ -59,7 +59,7 @@ example_texts = [
 
 # Gradio Interface
 with gr.Blocks() as demo:
-    gr.Markdown("# <center> Kokoro-82m Text-to-Speech with Gradio </center>")
+    gr.Markdown("# <center> Kokoro TTS ONNX Inference </center>")
     
     # Model-specific inputs
     with gr.Row(variant="panel"):
