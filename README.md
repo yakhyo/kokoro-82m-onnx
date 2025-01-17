@@ -70,15 +70,13 @@ Access your app at http://localhost:7860 once it's running.
 
 ### Download ONNX Model
 
-[kokoro-quant.onnx](https://github.com/yakhyo/kokoro-82m/releases/download/v0.0.1/kokoro-quant.onnx)
-[kokoro-v0_19.onnx](https://github.com/yakhyo/kokoro-82m/releases/download/v0.0.1/kokoro-v0_19.onnx)
+- [kokoro-quant.onnx](https://github.com/yakhyo/kokoro-82m/releases/download/v0.0.1/kokoro-quant.onnx) by [@taylorchu](https://github.com/taylorchu)
+- [kokoro-v0_19.onnx](https://github.com/yakhyo/kokoro-82m/releases/download/v0.0.1/kokoro-v0_19.onnx) by [@hexgrad](https://huggingface.co/hexgrad/Kokoro-82M)
 
-| **Filename**        | **Description**                      | **Size** |
-| ------------------- | ------------------------------------ | -------- |
-| `kokoro-quant.onnx` | Mixed precision model (**faster**)\* | 169MB    |
-| `kokoro-v0_19.onnx` | Original model                       | 330MB    |
-
-\*- Mixed precision model converted by https://github.com/taylorchu
+| **Filename**        | **Description**                    | **Size** |
+| ------------------- | ---------------------------------- | -------- |
+| `kokoro-quant.onnx` | Mixed precision model (**faster**) | 169MB    |
+| `kokoro-v0_19.onnx` | Original model                     | 330MB    |
 
 ### Jupyter Notebook Inference Example
 
